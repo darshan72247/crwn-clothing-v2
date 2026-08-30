@@ -22,8 +22,7 @@ const signInWithGoogle = async () => {
 const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormField);
   const { email, password } = formFields;
-
-  console.log(formFields);
+  // console.log(formFields);
 
   const resetFormFields = () => {
     setFormFields(defaultFormField);
@@ -37,7 +36,6 @@ const SignInForm = () => {
         email,
         password
       );
-      console.log(user);
       resetFormFields();
     } catch (error) {
       switch (error.code) {
