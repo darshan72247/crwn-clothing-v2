@@ -15,8 +15,7 @@ const defaultFormField = {
 };
 
 const signInWithGoogle = async () => {
-  const { user } = await signInWithGooglePopup();
-  await creatUserDocumentFromAuth(user);
+ await signInWithGooglePopup();  
 };
 
 const SignInForm = () => {
